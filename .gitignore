@@ -1,0 +1,6 @@
+# Ignorar
+
+*.html
+*.log
+*.json
+screenshots/*
