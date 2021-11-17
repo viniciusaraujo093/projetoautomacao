@@ -3,4 +3,5 @@
 *.html
 *.log
 *.json
-screenshots/*
+*.png
+log/screenshots/*
