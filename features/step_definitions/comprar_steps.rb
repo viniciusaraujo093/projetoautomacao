@@ -8,10 +8,6 @@ Dado('que estou na pagina de login') do
     @app.comprar.login(email, senha)
   end
 
-  Então("devo ver a mensagem de alerta {string}") do |mensagem|                 
-    expect(@app.comprar.mensagem_alerta).to include mensagem
-  end
-
   Quando("Pesquiso o item {string}") do |roupa|
     @app.comprar.pesquisar(roupa)
   end
