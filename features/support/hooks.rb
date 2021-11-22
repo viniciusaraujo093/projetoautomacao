@@ -16,7 +16,8 @@ After do |scenario|
  end
 
 at_exit do
-    info = { Environment: 'Projeto Automação', Date: Time.now.getutc, Testers: 'Vinicius Araujo, Rafael Sena, Pedro Augusto, Júlio César, Felipe Bezerra, Carlos Correia' }
+    info = { Environment: 'Projeto Automação', Date: Time.now.strftime("%d/%m/%Y %H:%M"), 
+        Testers: 'Vinicius Araujo, Rafael Sena, Pedro Augusto, Júlio César, Felipe Bezerra, Carlos Correia' }
     ReportBuilder.configure do |config|
         config.json_path = 'report.json'
         config.report_path = 'cucumber_web_report'
